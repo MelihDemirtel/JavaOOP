@@ -7,8 +7,6 @@ public class FourOperation {
 		System.out.println("Multiplication = "+multiplication(5,2));
 		System.out.println("Division = "+division(5,2));
 
-		
-
 	}
 	
 	public static double summing(double a, double b) {
