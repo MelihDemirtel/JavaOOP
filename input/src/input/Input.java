@@ -4,9 +4,11 @@
  */
 package input;
 
+import java.util.Scanner;
+
 /**
  *
- * @author EXT02D47194
+ * @author MelihDemirtel
  */
 public class Input {
 
@@ -14,7 +16,15 @@ public class Input {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        System.out.println("Summing : "+summing());       
+}
+    public static int summing(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Number1 Entry : ");
+        int number1 = input.nextInt();
+        System.out.print("Number2 Entry : ");
+        int number2 = input.nextInt();
+        
+        return number1 + number2;
     }
-    
 }
