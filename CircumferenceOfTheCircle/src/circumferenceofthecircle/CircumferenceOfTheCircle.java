@@ -4,9 +4,11 @@
  */
 package circumferenceofthecircle;
 
+import java.util.Scanner;
+
 /**
  *
- * @author EXT02D47194
+ * @author MelihDemirtel
  */
 public class CircumferenceOfTheCircle {
 
@@ -14,7 +16,21 @@ public class CircumferenceOfTheCircle {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Circle circle = new Circle();
+        Scanner input = new Scanner(System.in);
+        
+        inputDiameter();
+    
+    }
+    
+    public static void inputDiameter(){
+        Circle circle = new Circle();
+        Scanner input = new Scanner(System.in);
+        System.out.print("Please Entry Diameter : ");
+        double circumference = input.nextDouble();
+        circle.setD(circumference);
+        
+        System.out.println("Circumference of the Circle = "+circle.getC());
     }
     
 }
