@@ -4,9 +4,12 @@
  */
 package forloop;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 /**
  *
- * @author EXT02D47194
+ * @author MelihDemirtel
  */
 public class ForLoop {
 
@@ -14,7 +17,21 @@ public class ForLoop {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner input = new Scanner(System.in);
+        System.out.print("How many numbers will you enter? : ");
+        int enterOfNumber = input.nextInt();
+        int[] numbers = new int[enterOfNumber];
+        for(int i = 1; i <= enterOfNumber; i++ ){
+            System.out.print("Entry "+i+" Number : ");
+            numbers[i-1]=input.nextInt();
+        }
+        
+        int total = 0;
+        for(int number:numbers){
+            total = total + number;
+        }
+        System.out.print("Total of Numbers = "+total);
+   
     }
     
 }
