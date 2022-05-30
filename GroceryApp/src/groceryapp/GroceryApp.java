@@ -23,9 +23,7 @@ public class GroceryApp {
     public static void info(){
         Scanner input = new Scanner(System.in);
         Stock stock = new Stock();
-        Calculation calculation = new Calculation();
-        Total total = new Total();
-        
+                
         System.out.println("How many Apple KG = ");
         double kilogramApple = input.nextDouble();
         
