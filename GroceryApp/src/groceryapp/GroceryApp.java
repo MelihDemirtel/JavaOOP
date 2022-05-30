@@ -4,9 +4,11 @@
  */
 package groceryapp;
 
+import java.util.Scanner;
+
 /**
  *
- * @author EXT02D47194
+ * @author MelihDemirtel
  */
 public class GroceryApp {
 
@@ -14,7 +16,26 @@ public class GroceryApp {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        
+    }
+    
+    public static void info(){
+        Scanner input = new Scanner(System.in);
+        Stock stock = new Stock();
+        Calculation calculation = new Calculation();
+        Total total = new Total();
+        
+        System.out.println("How many Apple KG = ");
+        double kilogramApple = input.nextDouble();
+        
+        System.out.println("How many Pear KG = ");
+        double kilogramPear = input.nextDouble();
+        
+        System.out.println("How many Orange KG = ");
+        double kilogramOrange = input.nextDouble();
+        
+        
     }
     
 }
