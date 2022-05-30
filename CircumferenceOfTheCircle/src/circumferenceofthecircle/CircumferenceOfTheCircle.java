@@ -16,11 +16,7 @@ public class CircumferenceOfTheCircle {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Circle circle = new Circle();
-        Scanner input = new Scanner(System.in);
-        
         inputDiameter();
-    
     }
     
     public static void inputDiameter(){
