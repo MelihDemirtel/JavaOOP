@@ -4,7 +4,6 @@
  */
 package forloop;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -28,7 +27,7 @@ public class ForLoop {
         
         int total = 0;
         for(int number:numbers){
-            total = total + number;
+            total += number;
         }
         System.out.print("Total of Numbers = "+total);
    
