@@ -6,7 +6,7 @@ package tostring;
 
 /**
  *
- * @author EXT02D47194
+ * @author MelihDemirtel
  */
 public class ToString {
 
@@ -14,7 +14,16 @@ public class ToString {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Student student = new Student();
+        
+        student.setFirstName("Jack");
+        student.setLastName("Potter");
+        student.setStudentNumber(555);
+        student.setBirthday(1994);
+        
+        student.showInfo();
+        
+        System.out.println(student);
     }
     
 }
