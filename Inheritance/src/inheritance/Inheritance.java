@@ -6,7 +6,7 @@ package inheritance;
 
 /**
  *
- * @author EXT02D47194
+ * @author MelihDemirtel
  */
 public class Inheritance {
 
@@ -14,7 +14,11 @@ public class Inheritance {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Students students = new Students(2, "admin", "123456");
+        Teachers teachers = new Teachers(101, 95, 5000, "admin", "123456");
+       
+        System.out.println(teachers.getAmount());
+        System.out.println(teachers.getUserName());
     }
     
 }

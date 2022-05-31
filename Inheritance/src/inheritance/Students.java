@@ -6,8 +6,22 @@ package inheritance;
 
 /**
  *
- * @author EXT02D47194
+ * @author MelihDemirtel
  */
-public class Students {
-    
+public class Students extends User{
+    private int numberOfCourse;
+
+    public Students(int numberOfCourse, String userName, String password) {
+        super(userName, password);
+        this.numberOfCourse = numberOfCourse;
+    }
+
+    public int getNumberOfCourse() {
+        return numberOfCourse;
+    }
+
+    public void setNumberOfCourse(int numberOfCourse) {
+        this.numberOfCourse = numberOfCourse;
+    }
+  
 }
