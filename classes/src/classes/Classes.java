@@ -6,7 +6,7 @@ package classes;
 
 /**
  *
- * @author EXT02D47194
+ * @author MelihDemirtel
  */
 public class Classes {
 
@@ -14,7 +14,19 @@ public class Classes {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Maths maths = new Maths();
+        
+        System.out.println(maths.summing1(1, 1));
+        maths.summing2(1, 1);
+        
+        System.out.println(maths.extraction1(2, 1));
+        maths.extraction2(2, 1);
+        
+        System.out.println(maths.multiplication1(2, 2));
+        maths.multiplication2(2, 2);
+        
+        System.out.println(maths.division1(10, 2));
+        maths.division2(10, 2);
     }
     
 }
