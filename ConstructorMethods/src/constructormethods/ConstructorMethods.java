@@ -18,6 +18,12 @@ public class ConstructorMethods {
         System.out.println(student.getFirstName());
         student.setFirstName("Jack");
         System.out.println(student.getFirstName());
+        
+        //Students students = new Students(10);
+        //Students students = new Students("Jack", "Potter", 555, 1994);
+        Students students = new Students();
+        
+        System.out.println(students.getFirstName());
     }
     
 }

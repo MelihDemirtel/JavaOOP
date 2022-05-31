@@ -23,7 +23,7 @@ public class Student {
         this.studentNumber = 000;
         this.studentBirthyear = 0000;
     }
-
+    
     public String getFirstName() {
         return firstName;
     }
