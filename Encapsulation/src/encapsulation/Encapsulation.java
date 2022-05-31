@@ -4,9 +4,11 @@
  */
 package encapsulation;
 
+import java.util.Scanner;
+
 /**
  *
- * @author EXT02D47194
+ * @author MelihDemirtel
  */
 public class Encapsulation {
 
@@ -14,7 +16,30 @@ public class Encapsulation {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Student student = new Student();
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Student's FirstName : ");
+        String firstName = input.nextLine();
+        
+        System.out.print("Student's LastName : ");
+        String lastName = input.nextLine();
+                
+        System.out.print("Student's Number : ");
+        int studentNumber = input.nextInt();
+                
+        System.out.print("Student's Birthday : ");
+        int birthday = input.nextInt();
+                
+        student.setFirstName(firstName);
+        student.setLastName(lastName);
+        student.setStudentNumber(studentNumber);
+        student.setBirthday(birthday);
+        
+        System.out.println(student.getFirstName());
+        System.out.println(student.getLastName());
+        System.out.println(student.getStudentNumber());
+        System.out.println(student.getBirthday());
     }
     
 }
