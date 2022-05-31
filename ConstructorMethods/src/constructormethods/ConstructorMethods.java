@@ -6,7 +6,7 @@ package constructormethods;
 
 /**
  *
- * @author EXT02D47194
+ * @author MelihDemirtel
  */
 public class ConstructorMethods {
 
@@ -14,7 +14,10 @@ public class ConstructorMethods {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Student student = new Student();
+        System.out.println(student.getFirstName());
+        student.setFirstName("Jack");
+        System.out.println(student.getFirstName());
     }
     
 }
