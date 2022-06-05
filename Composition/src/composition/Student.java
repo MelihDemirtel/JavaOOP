@@ -6,8 +6,24 @@ package composition;
 
 /**
  *
- * @author EXT02D47194
+ * @author MelihDemirtel
  */
 public class Student {
+    public String firstName;
+    public String lastName;
+    public int no;
+    public String fatherName;
+    public String motherName;
+    public int birthyear;
+
+    public Student(String firstName, String lastName, int no, String fatherName, String motherName, int birthyear) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.no = no;
+        this.fatherName = fatherName;
+        this.motherName = motherName;
+        this.birthyear = birthyear;
+    }
+    
     
 }

@@ -6,8 +6,18 @@ package composition;
 
 /**
  *
- * @author EXT02D47194
+ * @author MelihDemirtel
  */
 public class StudentTransactions {
+    public Student student;
+
+    public StudentTransactions(Student student) {
+        this.student = student;
+    }
+    
+    public void add(){
+         System.out.println("Student Added : "+student.firstName);
+    }
+    
     
 }

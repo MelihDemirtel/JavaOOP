@@ -6,7 +6,7 @@ package composition;
 
 /**
  *
- * @author EXT02D47194
+ * @author MelihDemirtel
  */
 public class Composition {
 
@@ -14,7 +14,11 @@ public class Composition {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Student student = new Student("Jack", "Potter", 555, "Adam", "Mary", 1994);
+        
+        StudentTransactions studentTransactions = new StudentTransactions(student);
+        
+        studentTransactions.add();
     }
     
 }
