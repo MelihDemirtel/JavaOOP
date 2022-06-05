@@ -6,7 +6,7 @@ package compositionexample;
 
 /**
  *
- * @author EXT02D47194
+ * @author MelihDemirtel
  */
 public class CompositionExample {
 
@@ -14,7 +14,14 @@ public class CompositionExample {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Product product = new Product("Asus", "Laptop", 5000, 001, 5);
+        
+        ProductManager productManager = new ProductManager(product);
+        
+        productManager.add();
+        productManager.update();     
+        productManager.remove();
+                
     }
     
 }
