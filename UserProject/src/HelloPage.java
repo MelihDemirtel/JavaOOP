@@ -25,17 +25,41 @@ public class HelloPage extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        lblLogin1 = new javax.swing.JLabel();
+        lblWelcome1 = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        lblLogin1.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
+        lblLogin1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblLogin1.setText("LOGIN SUCCES");
+        lblLogin1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        lblWelcome1.setFont(new java.awt.Font("Segoe UI", 2, 48)); // NOI18N
+        lblWelcome1.setText("WELCOME");
+        lblWelcome1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap(62, Short.MAX_VALUE)
+                .addComponent(lblLogin1)
+                .addGap(54, 54, 54))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(115, 115, 115)
+                .addComponent(lblWelcome1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(67, 67, 67)
+                .addComponent(lblLogin1)
+                .addGap(18, 18, 18)
+                .addComponent(lblWelcome1)
+                .addContainerGap(83, Short.MAX_VALUE))
         );
 
         pack();
@@ -77,5 +101,7 @@ public class HelloPage extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel lblLogin1;
+    private javax.swing.JLabel lblWelcome1;
     // End of variables declaration//GEN-END:variables
 }

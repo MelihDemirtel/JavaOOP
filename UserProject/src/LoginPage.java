@@ -1,3 +1,7 @@
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -101,6 +105,14 @@ public class LoginPage extends javax.swing.JFrame {
         String userPassword = String.valueOf(txtUserPassword.getPassword());
         if(userName.equals("admin") && userPassword.equals("000001")){
             lblNotification.setText("Login Success");
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(LoginPage.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            HelloPage helloPage = new HelloPage();
+            helloPage.setVisible(true);
+            this.setVisible(false);
         }else{
             lblNotification.setText("User Name or Password Invalid");
         }
